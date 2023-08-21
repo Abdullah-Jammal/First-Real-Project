@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawyer App</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+<body>
+  <div class="container">
+    <div class="law">
+      <div class="firstLaw">التسلسل<span>00</span></div>
+      <span class="showsuts">عرض دعوات اليوم</span>
+      <div class="secondLaw">عدد الدعوات <span>00</span></div>
+    </div>
+    <form>
+      <div class="wordDate">
+        <div class="word">
+          <label for="name">الاسم</label>
+          <input type="text" id="name">
+      </div>
+      <div class="sueNumber">
+        <label for="name">رقم الدعوه</label>
+        <input type="number" id="numSue">
+    </div>
+      </div>
+      <div class="date">
+        <div class="maindate">
+          <label for="main">تاريخ التسجيل</label>
+          <input type="date" id="main">
+        </div>
+        <div class="lawdatediv">
+          <label for="lawdate">تاريخ الدعوه</label>
+          <input type="date" id="lawdate">
+        </div>
+      </div>
+      <div class="result">
+        <div class="decision">
+          <label for="finalResault">ناتج القرار</label>
+          <input type="text" id="finalResault">
+        </div>
+        <div class="datedecision">
+          <label for="finalResaultDate">تاريخ القرار</label>
+          <input type="date" id="finalResaultDate">
+        </div>
+      </div>
+      <div class="upload">
+        <div class="first-img">
+          <label for="first">المستمسكات</label>
+          <input type="file" id="first">
+          <div class="uploded-image"></div>
+        </div>
+        <div class="second-image">
+          <label for="second">الوكاله</label>
+          <input type="file" id="second">
+          <div class="uploded-image-two"></div>
+        </div>
+      </div>
+      <div class="button">
+        <span class="btn">Create</span>
+        <input type="text" placeholder="Search" class="search">
+        <span class="reload">Reload</span>
+      </div>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>التسلسل</th>
+          <th>الاسم</th>
+          <th>رقم الدعوه</th>
+          <th>تاريخ التسجيل</th>
+          <th>تاريخ الدعوه</th>
+          <th>ناتج القرار</th>
+          <th>تاريخ القرار</th>
+          <th>Image</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="displayImage hidden">
+    <div class="firstImage"></div>
+    <div class="secondImage"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
